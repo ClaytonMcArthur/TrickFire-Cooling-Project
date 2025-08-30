@@ -1,8 +1,3 @@
-// Ishaan Shete
-// TrickFire Robotics Cooling Team
-// Team: Clayton, Pasha, Davin, Reyhan, Abdullahi
-// 03/16/2025
-
 const int fanPin1 = 2;
 const int fanPin2 = 4;
 const int fanPin3 = 7;
