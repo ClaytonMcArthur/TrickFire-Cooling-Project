@@ -1,6 +1,3 @@
-// I copied from Ishaan sorry 
-
-
 const int pwm1 = 3;
 const int pwm2 = 5;
 const int pwm3 = 6;
@@ -25,22 +22,22 @@ void setup() {
 
 void loop() {
 
-  // float temperature = readTemperature(); //in celcius
-  // Serial.print("Temperature: ");
-  // Serial.println(temperature);
+  float temperature = readTemperature(); //in celcius
+  Serial.print("Temperature: ");
+  Serial.println(temperature);
 
-  // if(temperature > 40.0) {
-  //     turnFanOn();
-  //     fanStartTime = millis(); //start the timer
-  // }
+  if(temperature > 40.0) {
+       turnFanOn();
+       fanStartTime = millis(); //start the timer
+  }
 
-  // //keep fan on until temperature drops below 20degrees C
-  // if(fanOn) {
-  //   if(millis() - fanStartTime >= fanRunTime || temperature <= 20.0) {
-  //     turnFanOff();
-  //     fanOn = false;
-  //   }
-  // }
+  //keep fan on until temperature drops below 20degrees C
+ if(fanOn) {
+   if(millis() - fanStartTime >= fanRunTime || temperature <= 20.0) {
+    turnFanOff();
+    fanOn = false;
+  }
+ }
 
   // delay(500);
 
