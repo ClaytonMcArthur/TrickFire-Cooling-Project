@@ -41,7 +41,9 @@ A compact cooling controller for TrickFire Robotics. The project combines a cust
 2. **Arduino Nano Every** (I²C slave) interprets commands and outputs PWM to the MOSFET gates for each fan channel.
 3. **Control PCB** provides power distribution and MOSFET low‑side switching for the 5 V fans.
 
+PCB:
 ![PCB](PCB.png)
+Schematic:
 ![Schematic](Schematic.png)
 
 ---
